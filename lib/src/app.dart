@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-
+import 'package:my_examples_app/src/pages/gradientText_page.dart';
 import 'package:my_examples_app/src/pages/home_page.dart';
 import 'package:my_examples_app/src/pages/test_page.dart';
 
@@ -15,7 +15,7 @@ class App extends StatelessWidget {
         home: Home(),
         initialRoute: '/',
         routes: {
-          '/screen1': (BuildContext context) => TestPage(),
+          '/gradient': (BuildContext context) => GradientText(),
           '/screen2': (BuildContext context) => TestPage(),
         },
       );

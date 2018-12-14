@@ -1,10 +1,10 @@
 {
     "examples": [
         {
-            "title":"Uno",
-            "image":"https://cdn2.iconfinder.com/data/icons/business-office-icons/256/To-do_List-512.png",
-            "description":"Lorem ipsum",
-            "route":"/screen1"
+            "title":"Gradient Text",
+            "image":"https://cdn.iconscout.com/icon/free/png-256/pixel-gradient-screen-function-effect-31942.png",
+            "description":"Make a gradient text",
+            "route":"/gradient"
         },
         {
             "title":"Dos",
