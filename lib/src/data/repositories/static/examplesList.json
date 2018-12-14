@@ -1,0 +1,16 @@
+{
+    "examples": [
+        {
+            "title":"Uno",
+            "image":"https://cdn2.iconfinder.com/data/icons/business-office-icons/256/To-do_List-512.png",
+            "description":"Lorem ipsum",
+            "route":"/screen1"
+        },
+        {
+            "title":"Dos",
+            "image":"https://cdn2.iconfinder.com/data/icons/business-office-icons/256/To-do_List-512.png",
+            "description":"Lorem ipsum",
+            "route":"/screen2"
+        }
+    ]
+}
