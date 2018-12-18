@@ -1,16 +1,33 @@
 {
     "examples": [
         {
-            "title":"Gradient Text",
-            "image":"https://cdn.iconscout.com/icon/free/png-256/pixel-gradient-screen-function-effect-31942.png",
-            "description":"Make a gradient text",
-            "route":"/gradient"
+            "title": "Gradient Text",
+            "image": "https://cdn.iconscout.com/icon/free/png-256/pixel-gradient-screen-function-effect-31942.png",
+            "description": "Make a gradient text",
+            "route": "/gradient",
+            "subRoutes": []
         },
         {
-            "title":"Dos",
-            "image":"https://cdn2.iconfinder.com/data/icons/business-office-icons/256/To-do_List-512.png",
-            "description":"Lorem ipsum",
-            "route":"/screen2"
+            "title": "Layout",
+            "image": "https://cdn2.iconfinder.com/data/icons/budicon-interface-layout-2/16/125-layout_-_wireframes-512.png",
+            "description": "Layout widgets (Row/Column, Baseline, Stack, Expanded, Padding)",
+            "route": "/layout",
+            "subRoutes": [
+                {
+                    "title": "Row/Column",
+                    "image": "http://iconsetc.com/icons-watermarks/simple-black/layouts-rounded/layouts-rounded_2-rows-3-columns-top/layouts-rounded_2-rows-3-columns-top_simple-black_512x512.png",
+                    "description": "Explore properties of row and column",
+                    "route": "/rowcolumn",
+                    "subRoutes": []
+                },
+                {
+                    "title": "Baseline",
+                    "image": "http://iconsetc.com/icons-watermarks/simple-black/layouts-rounded/layouts-rounded_2-rows-3-columns-top/layouts-rounded_2-rows-3-columns-top_simple-black_512x512.png",
+                    "description": "Explore properties of baseline",
+                    "route": "/baseline",
+                    "subRoutes": []
+                }
+            ]
         }
     ]
 }

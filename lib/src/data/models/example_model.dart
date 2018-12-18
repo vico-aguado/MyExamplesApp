@@ -19,12 +19,14 @@ class Example {
     String image;
     String description;
     String route;
+    List<Example> subRoutes;
 
     Example({
         this.title,
         this.image,
         this.description,
         this.route,
+        this.subRoutes,
     });
 
     factory Example.fromJson(Map<String, dynamic> json) => new Example(
@@ -32,6 +34,7 @@ class Example {
         image: json["image"],
         description: json["description"],
         route: json["route"],
+        subRoutes: new List<Example>.from(json["subRoutes"].map((x) => Example.fromJson(x))),
     );
 
     Map<String, dynamic> toJson() => {
@@ -39,10 +42,11 @@ class Example {
         "image": image,
         "description": description,
         "route": route,
+        "subRoutes": new List<dynamic>.from(subRoutes.map((x) => x.toJson())),
     };
 
     @override
       String toString() {
-        return "\n{title: $title, image: $image, route: $route, description: $description}";
+        return "\n{title: $title, image: $image, route: $route, description: $description, subroutes: $subRoutes}";
       }
 }

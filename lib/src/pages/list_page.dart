@@ -2,20 +2,27 @@ import 'package:flutter/material.dart';
 import 'package:my_examples_app/src/data/models/example_model.dart';
 import 'package:my_examples_app/src/data/repositories/examplesList_repository.dart';
 
-class Home extends StatefulWidget {
-  _HomeState createState() => _HomeState();
-}
+class ListPage extends StatelessWidget {
 
-class _HomeState extends State<Home> {
-  final repo = ExamplesListRepository();
+  ListPage({this.title, this.values});
+  
+  final List<Example> values;
+  final String title;
+  final _repo = ExamplesListRepository();
 
   @override
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
-        title: Text("My Examples"),
+        title: Text(title != null ? title : "My Examples"),
       ),
-      body: FutureBuilder(
+      body: _getItems(),
+    );
+  }
+
+  Widget _getItems(){
+    if(this.values == null){
+      return FutureBuilder(
         initialData: [],
         builder: (context, snapshot) {
           switch (snapshot.connectionState) {
@@ -31,15 +38,16 @@ class _HomeState extends State<Home> {
               if (snapshot.hasError) {
                 return new Text('Error: ${snapshot.error}');
               } else {
-                List<Example> values = snapshot.data;
-                print(values);
-                return _getList(values);
+                List<Example> _values = snapshot.data;
+                return _getList(_values);
               }
           }
         },
-        future: repo.loadExamples(),
-      ),
-    );
+        future: _repo.loadExamples(),
+      );
+    }else{
+      return _getList(this.values);
+    }
   }
 
   Widget _getList(List<Example> values) {
@@ -49,7 +57,12 @@ class _HomeState extends State<Home> {
         final example = values[index];
         return ListTile(
           onTap: (){
-            Navigator.of(context).pushNamed(example.route);
+            if(example.subRoutes.length == 0){
+              Navigator.of(context).pushNamed(example.route);
+            }else{
+              print(example.subRoutes);
+              Navigator.push(context, MaterialPageRoute(builder: (BuildContext context) => ListPage(values: example.subRoutes, title: example.title,)));
+            }
           },
           title: Text(example.title),
           subtitle: Text(example.description),
