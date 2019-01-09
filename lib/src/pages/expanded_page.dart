@@ -1,7 +1,6 @@
 import 'package:flutter/material.dart';
 
 class ExpandedPage extends StatelessWidget {
-
   Widget _buildBox({int points, Color color, Color textColor = Colors.white}) {
     return Expanded(
       flex: points,

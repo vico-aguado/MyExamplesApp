@@ -41,6 +41,14 @@
                     "route": "/expanded",
                     "subRoutes": []
                 }
+                ,
+                {
+                    "title": "Padding",
+                    "image": "https://cdn.iconscout.com/icon/free/png-256/padding-432867.png",
+                    "description": "Explore properties of padding",
+                    "route": "/padding",
+                    "subRoutes": []
+                }
             ]
         },
         {
@@ -49,6 +57,21 @@
             "description": "Make a PNG image from any widget",
             "route": "/toimage",
             "subRoutes": []
+        },
+        {
+            "title": "Views",
+            "image": "https://png.pngtree.com/svg/20160308/widget_1273964.png",
+            "description": "View widgets (PageView, List, Silvers, Hero, Nested)",
+            "route": "/views",
+            "subRoutes": [
+                {
+                    "title": "Page View",
+                    "image": "https://cdn1.iconfinder.com/data/icons/user-interface-glyph-set/512/user-interface-layout-column-vertical-application-glyph-512.png",
+                    "description": "Explore Page view widget",
+                    "route": "/pageView",
+                    "subRoutes": []
+                }
+            ]
         }
     ]
 }

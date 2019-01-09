@@ -11,7 +11,8 @@ class _GradientTextState extends State<GradientText> {
   // a RenderBox object to use in state
   RenderBox myTextRenderBox;
 
-  Shader getTextGradient(RenderBox renderBox, Color firstColor, Color secondColor) {
+  Shader getTextGradient(
+      RenderBox renderBox, Color firstColor, Color secondColor) {
     if (renderBox == null) return null;
     return LinearGradient(
       colors: <Color>[firstColor, secondColor],
@@ -22,10 +23,10 @@ class _GradientTextState extends State<GradientText> {
         renderBox.size.height));
   }
 
-  Shader getLinearGradient(Color firstColor, Color secondColor){
+  Shader getLinearGradient(Color firstColor, Color secondColor) {
     return LinearGradient(
-    colors: <Color>[firstColor, secondColor],
-  ).createShader(Rect.fromLTWH(0.0, 0.0, 200.0, 70.0));
+      colors: <Color>[firstColor, secondColor],
+    ).createShader(Rect.fromLTWH(0.0, 0.0, 200.0, 70.0));
   }
 
   @override
@@ -58,45 +59,50 @@ class _GradientTextState extends State<GradientText> {
               'Hello Gradients!',
               key: myTextKey,
               style: new TextStyle(
-              fontSize: 40.0,
-              fontWeight: FontWeight.bold,
-              //background: Paint()..color = Colors.black12,
-              //foreground: Paint()..shader = getTextGradient(myTextRenderBox)),
-              foreground: Paint()..shader = getLinearGradient(Colors.pink, Colors.green)),
+                  fontSize: 40.0,
+                  fontWeight: FontWeight.bold,
+                  //background: Paint()..color = Colors.black12,
+                  //foreground: Paint()..shader = getTextGradient(myTextRenderBox)),
+                  foreground: Paint()
+                    ..shader = getLinearGradient(Colors.pink, Colors.green)),
             ),
-            SizedBox(height: 30,),
+            SizedBox(
+              height: 30,
+            ),
             RichText(
               text: TextSpan(
-            text: 'Don\'t tax the South ',
-            style: TextStyle(
-                  fontSize: 40.0,
-                  decoration: TextDecoration.underline,
-                  decorationColor: Colors.cyan,
-                  decorationStyle: TextDecorationStyle.dashed,
-                  foreground: Paint()..shader = getLinearGradient(Colors.blue, Colors.red)
-                ),
-            children: <TextSpan>[
-              TextSpan(
-                text: 'cuz',
+                text: 'Don\'t tax the South ',
                 style: TextStyle(
-                  fontSize: 40.0,
-                  decoration: TextDecoration.underline,
-                  decorationColor: Colors.red,
-                  decorationStyle: TextDecorationStyle.double,
-                  foreground: Paint()..shader = getLinearGradient(Colors.indigo, Colors.orange)
-                ),
-              ),
-              TextSpan(
-                text: ' we got it made in the shade',
-                style: TextStyle(
-                  fontSize: 40.0,
-                  decoration: TextDecoration.underline,
-                  decorationColor: Colors.blue,
-                  decorationStyle: TextDecorationStyle.dotted,
-                  foreground: Paint()..shader = getLinearGradient(Colors.teal, Colors.yellow)
-                ),
-              ),
-            ],
+                    fontSize: 40.0,
+                    decoration: TextDecoration.underline,
+                    decorationColor: Colors.cyan,
+                    decorationStyle: TextDecorationStyle.dashed,
+                    foreground: Paint()
+                      ..shader = getLinearGradient(Colors.blue, Colors.red)),
+                children: <TextSpan>[
+                  TextSpan(
+                    text: 'cuz',
+                    style: TextStyle(
+                        fontSize: 40.0,
+                        decoration: TextDecoration.underline,
+                        decorationColor: Colors.red,
+                        decorationStyle: TextDecorationStyle.double,
+                        foreground: Paint()
+                          ..shader =
+                              getLinearGradient(Colors.indigo, Colors.orange)),
+                  ),
+                  TextSpan(
+                    text: ' we got it made in the shade',
+                    style: TextStyle(
+                        fontSize: 40.0,
+                        decoration: TextDecoration.underline,
+                        decorationColor: Colors.blue,
+                        decorationStyle: TextDecorationStyle.dotted,
+                        foreground: Paint()
+                          ..shader =
+                              getLinearGradient(Colors.teal, Colors.yellow)),
+                  ),
+                ],
               ),
             )
           ],

@@ -3,9 +3,8 @@ import 'package:my_examples_app/src/data/models/example_model.dart';
 import 'package:my_examples_app/src/data/repositories/examplesList_repository.dart';
 
 class ListPage extends StatelessWidget {
-
   ListPage({this.title, this.values});
-  
+
   final List<Example> values;
   final String title;
   final _repo = ExamplesListRepository();
@@ -20,8 +19,8 @@ class ListPage extends StatelessWidget {
     );
   }
 
-  Widget _getItems(){
-    if(this.values == null){
+  Widget _getItems() {
+    if (this.values == null) {
       return FutureBuilder(
         initialData: [],
         builder: (context, snapshot) {
@@ -45,7 +44,7 @@ class ListPage extends StatelessWidget {
         },
         future: _repo.loadExamples(),
       );
-    }else{
+    } else {
       return _getList(this.values);
     }
   }
@@ -56,12 +55,18 @@ class ListPage extends StatelessWidget {
       itemBuilder: (context, index) {
         final example = values[index];
         return ListTile(
-          onTap: (){
-            if(example.subRoutes.length == 0){
+          onTap: () {
+            if (example.subRoutes.length == 0) {
               Navigator.of(context).pushNamed(example.route);
-            }else{
+            } else {
               print(example.subRoutes);
-              Navigator.push(context, MaterialPageRoute(builder: (BuildContext context) => ListPage(values: example.subRoutes, title: example.title,)));
+              Navigator.push(
+                  context,
+                  MaterialPageRoute(
+                      builder: (BuildContext context) => ListPage(
+                            values: example.subRoutes,
+                            title: example.title,
+                          )));
             }
           },
           title: Text(example.title),
@@ -69,7 +74,8 @@ class ListPage extends StatelessWidget {
           leading: Image(
             image: NetworkImage(example.image),
             fit: BoxFit.contain,
-            height: 35, ),
+            height: 35,
+          ),
           trailing: Icon(Icons.arrow_right),
         );
       },
