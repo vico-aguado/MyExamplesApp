@@ -39,7 +39,7 @@ class PropertiesSelectorState extends State<PropertiesSelector> {
   Widget build(BuildContext context) {
     return Container(
       child: Column(children: [
-        Text(widget.title, style: TextStyle(color: Colors.white, fontSize: 16)),
+        Text(widget.title, style: TextStyle(color: widget.disabled ? Colors.black26 : Colors.white, fontSize: 16)),
         Row(
           mainAxisAlignment: MainAxisAlignment.spaceBetween,
           children: <Widget>[

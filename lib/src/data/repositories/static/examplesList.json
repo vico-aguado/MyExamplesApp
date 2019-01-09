@@ -16,15 +16,22 @@
                 {
                     "title": "Row/Column",
                     "image": "http://iconsetc.com/icons-watermarks/simple-black/layouts-rounded/layouts-rounded_2-rows-3-columns-top/layouts-rounded_2-rows-3-columns-top_simple-black_512x512.png",
-                    "description": "Explore properties of row and column",
+                    "description": "Explore properties of row and column (MainAxisAlignment, MainAxisSize, CrossAxisAlignment)",
                     "route": "/rowcolumn",
                     "subRoutes": []
                 },
                 {
                     "title": "Baseline",
-                    "image": "http://iconsetc.com/icons-watermarks/simple-black/layouts-rounded/layouts-rounded_2-rows-3-columns-top/layouts-rounded_2-rows-3-columns-top_simple-black_512x512.png",
-                    "description": "Explore properties of baseline",
+                    "image": "https://cdn4.iconfinder.com/data/icons/software-menu-icons/256/SoftwareIcons-33-512.png",
+                    "description": "Explore properties of baseline (CrossAxisAlignment)",
                     "route": "/baseline",
+                    "subRoutes": []
+                },
+                {
+                    "title": "Stack",
+                    "image": "https://cdn1.iconfinder.com/data/icons/pixel-perfect-at-16px-volume-1/16/5049-512.png",
+                    "description": "Explore properties of stack (AlignmentDirectional, Positioned)",
+                    "route": "/stack",
                     "subRoutes": []
                 }
             ]
