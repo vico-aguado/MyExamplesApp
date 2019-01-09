@@ -6,4 +6,5 @@ Examples made in Flutter:
    1. Row/Column
    2. Baseline
    3. Stack
+   4. Expanded
 3. Widget to PNG Image

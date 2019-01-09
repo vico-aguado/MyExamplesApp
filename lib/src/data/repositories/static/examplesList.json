@@ -33,6 +33,13 @@
                     "description": "Explore properties of stack (AlignmentDirectional, Positioned)",
                     "route": "/stack",
                     "subRoutes": []
+                },
+                {
+                    "title": "Expanded",
+                    "image": "https://image.flaticon.com/icons/png/128/159/159698.png",
+                    "description": "Explore properties of expanded",
+                    "route": "/expanded",
+                    "subRoutes": []
                 }
             ]
         },

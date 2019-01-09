@@ -86,78 +86,77 @@ class _StackPageState extends State<StackPage> {
     });
   }
 
-
-  List<Widget> _buildChildren(){
+  List<Widget> _buildChildren() {
     if (_useAlignment) {
       return <Widget>[
-          SizedBox(
-            width: 300.0,
-            height: 300.0,
-            child: Container(
-              color: Colors.green,
-            ),
+        SizedBox(
+          width: 300.0,
+          height: 300.0,
+          child: Container(
+            color: Colors.green,
           ),
-          SizedBox(
-            width: 200.0,
-            height: 200.0,
-            child: Container(
-              color: Colors.yellow,
-            ),
+        ),
+        SizedBox(
+          width: 200.0,
+          height: 200.0,
+          child: Container(
+            color: Colors.yellow,
           ),
-          SizedBox(
-            width: 100.0,
-            height: 100.0,
-            child: Container(
-              color: Colors.red,
-            ),
+        ),
+        SizedBox(
+          width: 100.0,
+          height: 100.0,
+          child: Container(
+            color: Colors.red,
           ),
-        ];
-    }else{
+        ),
+      ];
+    } else {
       return <Widget>[
-          SizedBox(
-            width: 300.0,
-            height: 300.0,
-            child: Container(
-              color: Colors.yellow,
-            ),
+        SizedBox(
+          width: 300.0,
+          height: 300.0,
+          child: Container(
+            color: Colors.yellow,
           ),
-          Positioned(
-            left: 20.0,
-            top: 20.0,
-            width: 100.0,
-            height: 100.0,
-            child: Container(
-              color: Colors.indigo,
-            ),
+        ),
+        Positioned(
+          left: 20.0,
+          top: 20.0,
+          width: 100.0,
+          height: 100.0,
+          child: Container(
+            color: Colors.indigo,
           ),
-          Positioned(
-            right: 40.0,
-            top: 40.0,
-            width: 100.0,
-            height: 100.0,
-            child: Container(
-              color: Colors.red,
-            ),
+        ),
+        Positioned(
+          right: 40.0,
+          top: 40.0,
+          width: 100.0,
+          height: 100.0,
+          child: Container(
+            color: Colors.red,
           ),
-          Positioned(
-            left: 40.0,
-            bottom: 40.0,
-            width: 100.0,
-            height: 100.0,
-            child: Container(
-              color: Colors.green,
-            ),
+        ),
+        Positioned(
+          left: 40.0,
+          bottom: 40.0,
+          width: 100.0,
+          height: 100.0,
+          child: Container(
+            color: Colors.green,
           ),
-          Positioned(
-            bottom: 20.0,
-            right: 20.0,
-            width: 100.0,
-            height: 100.0,
-            child: Container(
-              color: Colors.blue,
-            ),
+        ),
+        Positioned(
+          bottom: 20.0,
+          right: 20.0,
+          width: 100.0,
+          height: 100.0,
+          child: Container(
+            color: Colors.blue,
           ),
-        ];
+        ),
+      ];
     }
   }
 

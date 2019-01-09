@@ -5,6 +5,7 @@ import 'package:my_examples_app/src/pages/list_page.dart';
 import 'package:my_examples_app/src/pages/rowColumn_page.dart';
 import 'package:my_examples_app/src/pages/toImage_page.dart';
 import 'package:my_examples_app/src/pages/stack_page.dart';
+import 'package:my_examples_app/src/pages/expanded_page.dart';
 //import 'package:my_examples_app/src/pages/test_page.dart';
 
 class App extends StatelessWidget {
@@ -24,6 +25,7 @@ class App extends StatelessWidget {
           '/baseline': (BuildContext context) => BaseLine(),
           '/toimage': (BuildContext context) => ToImage(),
           '/stack': (BuildContext context) => StackPage(),
+          '/expanded': (BuildContext context) => ExpandedPage(),
         },
       );
   }
