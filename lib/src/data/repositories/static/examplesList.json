@@ -28,6 +28,13 @@
                     "subRoutes": []
                 }
             ]
+        },
+        {
+            "title": "Widget to PNG Image",
+            "image": "https://static.thenounproject.com/png/28423-200.png",
+            "description": "Make a PNG image from any widget",
+            "route": "/toimage",
+            "subRoutes": []
         }
     ]
 }
