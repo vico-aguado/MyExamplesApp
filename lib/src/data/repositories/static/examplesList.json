@@ -77,6 +77,13 @@
                     "description": "Explore List view widget",
                     "route": "/listView",
                     "subRoutes": []
+                },
+                {
+                    "title": "Slivers",
+                    "image": "https://cdn.iconscout.com/icon/premium/png-256-thumb/view-day-5-657418.png",
+                    "description": "Explore Sliver view widget",
+                    "route": "/slivers",
+                    "subRoutes": []
                 }
             ]
         }

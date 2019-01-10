@@ -9,6 +9,7 @@ import 'package:my_examples_app/src/pages/expanded_page.dart';
 import 'package:my_examples_app/src/pages/padding_page.dart';
 import 'package:my_examples_app/src/pages/pageView_page.dart';
 import 'package:my_examples_app/src/pages/listView_page.dart';
+import 'package:my_examples_app/src/pages/slivers_page.dart';
 //import 'package:my_examples_app/src/pages/test_page.dart';
 
 class App extends StatelessWidget {
@@ -32,6 +33,7 @@ class App extends StatelessWidget {
           '/padding': (BuildContext context) => PaddingPage(),
           '/pageView': (BuildContext context) => PageViewPage(),
           '/listView': (BuildContext context) => ListViewPage(),
+          '/slivers': (BuildContext context) => SliversPage(),
         },
       );
   }
