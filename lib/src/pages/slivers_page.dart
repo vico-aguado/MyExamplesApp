@@ -1,7 +1,6 @@
 import 'package:flutter/material.dart';
 
 class SliversPage extends StatelessWidget {
-
   Widget _buildContent() {
     return CustomScrollView(
       slivers: <Widget>[
@@ -25,7 +24,10 @@ class SliversPage extends StatelessWidget {
                 color: Colors.teal[100 * (index % 9)],
                 child: Text(
                   'grid item $index',
-                  style: TextStyle(color: Colors.white, fontSize: 12, decoration: TextDecoration.none),
+                  style: TextStyle(
+                      color: Colors.white,
+                      fontSize: 12,
+                      decoration: TextDecoration.none),
                 ),
               );
             },
@@ -40,7 +42,10 @@ class SliversPage extends StatelessWidget {
                 alignment: Alignment.center,
                 color: Colors.lightBlue[100 * (index % 9)],
                 child: Text('list item $index',
-                    style: TextStyle(color: Colors.white, fontSize: 12, decoration: TextDecoration.none)),
+                    style: TextStyle(
+                        color: Colors.white,
+                        fontSize: 12,
+                        decoration: TextDecoration.none)),
               );
             },
           ),

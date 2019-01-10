@@ -15,7 +15,10 @@ class HeroHeader implements SliverPersistentHeaderDelegate {
     return Stack(
       fit: StackFit.expand,
       children: [
-        Image(fit: BoxFit.cover, image: NetworkImage("https://cbsmiami.files.wordpress.com/2017/07/swissalps.jpg?w=625")),
+        Image(
+            fit: BoxFit.cover,
+            image: NetworkImage(
+                "https://cbsmiami.files.wordpress.com/2017/07/swissalps.jpg?w=625")),
         Container(
           decoration: BoxDecoration(
             gradient: LinearGradient(
@@ -35,8 +38,11 @@ class HeroHeader implements SliverPersistentHeaderDelegate {
           top: 4.0,
           child: SafeArea(
             child: IconButton(
-              icon: Icon(Icons.arrow_back_ios, color: Colors.white,),
-              onPressed: (){
+              icon: Icon(
+                Icons.arrow_back_ios,
+                color: Colors.white,
+              ),
+              onPressed: () {
                 Navigator.pop(context);
               },
             ),
@@ -106,7 +112,9 @@ class HeroPage extends StatelessWidget {
               return Container(
                 alignment: Alignment.center,
                 padding: _edgeInsetsForIndex(index),
-                child: Image(fit: BoxFit.cover, image: NetworkImage(assetNames[index % assetNames.length])),
+                child: Image(
+                    fit: BoxFit.cover,
+                    image: NetworkImage(assetNames[index % assetNames.length])),
               );
             },
             childCount: assetNames.length * 2,
@@ -119,7 +127,8 @@ class HeroPage extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      body: Container(color: Color.fromRGBO(230, 230, 230, 1), child: _buildContent()),
+      body: Container(
+          color: Color.fromRGBO(230, 230, 230, 1), child: _buildContent()),
     );
   }
 }

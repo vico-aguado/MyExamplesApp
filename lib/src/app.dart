@@ -11,6 +11,7 @@ import 'package:my_examples_app/src/pages/pageView_page.dart';
 import 'package:my_examples_app/src/pages/listView_page.dart';
 import 'package:my_examples_app/src/pages/slivers_page.dart';
 import 'package:my_examples_app/src/pages/hero_page.dart';
+import 'package:my_examples_app/src/pages/nested_page.dart';
 //import 'package:my_examples_app/src/pages/test_page.dart';
 
 class App extends StatelessWidget {
@@ -36,6 +37,7 @@ class App extends StatelessWidget {
           '/listView': (BuildContext context) => ListViewPage(),
           '/slivers': (BuildContext context) => SliversPage(),
           '/hero': (BuildContext context) => HeroPage(),
+          '/nested': (BuildContext context) => NestedPage(),
         },
       );
   }

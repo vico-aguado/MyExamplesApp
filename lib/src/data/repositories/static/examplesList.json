@@ -91,6 +91,13 @@
                     "description": "Explore Hero view widget",
                     "route": "/hero",
                     "subRoutes": []
+                },
+                {
+                    "title": "Nested",
+                    "image": "https://www.shareicon.net/data/256x256/2015/08/05/80574_list_512x512.png",
+                    "description": "Explore Nested views",
+                    "route": "/nested",
+                    "subRoutes": []
                 }
             ]
         }
