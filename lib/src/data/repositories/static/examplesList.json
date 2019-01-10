@@ -70,6 +70,13 @@
                     "description": "Explore Page view widget",
                     "route": "/pageView",
                     "subRoutes": []
+                },
+                {
+                    "title": "List View",
+                    "image": "http://simpleicon.com/wp-content/uploads/list-256x256.png",
+                    "description": "Explore List view widget",
+                    "route": "/listView",
+                    "subRoutes": []
                 }
             ]
         }

@@ -8,6 +8,7 @@ import 'package:my_examples_app/src/pages/stack_page.dart';
 import 'package:my_examples_app/src/pages/expanded_page.dart';
 import 'package:my_examples_app/src/pages/padding_page.dart';
 import 'package:my_examples_app/src/pages/pageView_page.dart';
+import 'package:my_examples_app/src/pages/listView_page.dart';
 //import 'package:my_examples_app/src/pages/test_page.dart';
 
 class App extends StatelessWidget {
@@ -30,6 +31,7 @@ class App extends StatelessWidget {
           '/expanded': (BuildContext context) => ExpandedPage(),
           '/padding': (BuildContext context) => PaddingPage(),
           '/pageView': (BuildContext context) => PageViewPage(),
+          '/listView': (BuildContext context) => ListViewPage(),
         },
       );
   }
