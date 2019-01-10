@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:my_examples_app/src/pages/baseline_page.dart';
 import 'package:my_examples_app/src/pages/gradientText_page.dart';
-import 'package:my_examples_app/src/pages/list_page.dart';
+import 'package:my_examples_app/src/pages/menu_page.dart';
 import 'package:my_examples_app/src/pages/rowColumn_page.dart';
 import 'package:my_examples_app/src/pages/toImage_page.dart';
 import 'package:my_examples_app/src/pages/stack_page.dart';
@@ -10,6 +10,7 @@ import 'package:my_examples_app/src/pages/padding_page.dart';
 import 'package:my_examples_app/src/pages/pageView_page.dart';
 import 'package:my_examples_app/src/pages/listView_page.dart';
 import 'package:my_examples_app/src/pages/slivers_page.dart';
+import 'package:my_examples_app/src/pages/hero_page.dart';
 //import 'package:my_examples_app/src/pages/test_page.dart';
 
 class App extends StatelessWidget {
@@ -21,7 +22,7 @@ class App extends StatelessWidget {
           primaryColor: Colors.indigo,
           primarySwatch: Colors.indigo,
         ),
-        home: ListPage(),
+        home: MenuPage(),
         initialRoute: '/',
         routes: {
           '/gradient': (BuildContext context) => GradientText(),
@@ -34,6 +35,7 @@ class App extends StatelessWidget {
           '/pageView': (BuildContext context) => PageViewPage(),
           '/listView': (BuildContext context) => ListViewPage(),
           '/slivers': (BuildContext context) => SliversPage(),
+          '/hero': (BuildContext context) => HeroPage(),
         },
       );
   }

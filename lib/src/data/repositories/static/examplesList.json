@@ -84,6 +84,13 @@
                     "description": "Explore Sliver view widget",
                     "route": "/slivers",
                     "subRoutes": []
+                },
+                {
+                    "title": "Hero",
+                    "image": "http://icons.iconarchive.com/icons/iconsmind/outline/256/Landscape-2-icon.png",
+                    "description": "Explore Hero view widget",
+                    "route": "/hero",
+                    "subRoutes": []
                 }
             ]
         }

@@ -2,8 +2,8 @@ import 'package:flutter/material.dart';
 import 'package:my_examples_app/src/data/models/example_model.dart';
 import 'package:my_examples_app/src/data/repositories/examplesList_repository.dart';
 
-class ListPage extends StatelessWidget {
-  ListPage({this.title, this.values});
+class MenuPage extends StatelessWidget {
+  MenuPage({this.title, this.values});
 
   final List<Example> values;
   final String title;
@@ -63,7 +63,7 @@ class ListPage extends StatelessWidget {
               Navigator.push(
                   context,
                   MaterialPageRoute(
-                      builder: (BuildContext context) => ListPage(
+                      builder: (BuildContext context) => MenuPage(
                             values: example.subRoutes,
                             title: example.title,
                           )));
