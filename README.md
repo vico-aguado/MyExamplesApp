@@ -1,6 +1,7 @@
 # MyExamplesApp
 
-[![Build Status](https://travis-ci.org/vico-aguado/MyExamplesApp.svg?branch=master)](https://travis-ci.org/ico-aguado/MyExamplesApp)
+[![Build Status](https://travis-ci.org/vico-aguado/MyExamplesApp.svg?branch=master)](https://travis-ci.org/vico-aguado/MyExamplesApp)
+[![Version](https://img.shields.io/badge/version-1.0.0-blue.svg)](https://github.com/vico-aguado/MyExamplesApp)
 
 Examples made in Flutter:
 
