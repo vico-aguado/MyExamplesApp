@@ -18,6 +18,7 @@ Examples made in Flutter:
 6. Silvers
 7. Hero
 8. Nested
+9. Oauth2
 
 ## References
 [Andrea Bizzotto](https://github.com/bizz84/layout-demo-flutter)

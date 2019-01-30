@@ -100,6 +100,13 @@
                     "subRoutes": []
                 }
             ]
+        },
+        {
+            "title": "Oauth2",
+            "image": "https://blog.restcase.com/content/images/2017/01/oauth2.png",
+            "description": "Test Oauth2",
+            "route": "/oauth2",
+            "subRoutes": []
         }
     ]
 }

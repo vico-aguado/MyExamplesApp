@@ -15,6 +15,9 @@ environment:
 dependencies:
   flutter:
     sdk: flutter
+  oauth2: any
+  flutter_inappbrowser: any
+  
 
   # The following adds the Cupertino Icons font to your application.
   # Use with the CupertinoIcons class for iOS style icons.

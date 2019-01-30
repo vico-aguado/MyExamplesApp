@@ -2,6 +2,7 @@ import 'package:flutter/material.dart';
 import 'package:my_examples_app/src/pages/baseline_page.dart';
 import 'package:my_examples_app/src/pages/gradientText_page.dart';
 import 'package:my_examples_app/src/pages/menu_page.dart';
+import 'package:my_examples_app/src/pages/oauth_page.dart';
 import 'package:my_examples_app/src/pages/rowColumn_page.dart';
 import 'package:my_examples_app/src/pages/toImage_page.dart';
 import 'package:my_examples_app/src/pages/stack_page.dart';
@@ -38,6 +39,7 @@ class App extends StatelessWidget {
           '/slivers': (BuildContext context) => SliversPage(),
           '/hero': (BuildContext context) => HeroPage(),
           '/nested': (BuildContext context) => NestedPage(),
+          '/oauth2': (BuildContext context) => OauthPage(),
         },
       );
   }
